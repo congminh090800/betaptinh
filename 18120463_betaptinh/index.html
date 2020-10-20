@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bé tập tính</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+<body>
+  <DIV class="container">
+    <div class="row">
+      <h1>BÉ TẬP TÍNH </h1>
+      <div class="txt col-12-lg col-12-md col-12-sm">
+        số thứ nhất: <input  type="text" id="n1" onblur="blurFunc()">
+      <div class="txt col-12-lg col-12-md col-12-sm">
+        số thứ hai:
+        <input type="text" id="n2" onblur="blurFunc2()">
+      <div class="txt col-12-lg col-12-md col-12-sm">
+        <label class="radio-inline">
+          <input type="radio"  name="pheptinh" value="cong" id="cong" checked>Cộng
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="pheptinh" value="tru" id="tru">Trừ
+        </label>
+        <label class="radio-inline">
+          <input type="radio"  name="pheptinh" value="nhan" id="nhan">Nhân
+        </label>
+        <label class="radio-inline">
+          <input type="radio"  name="pheptinh" value="chia" id="chia">Chia
+        </label>
+      </div>
+      <div class="txt col-12-lg col-12-md col-12-sm">
+        Kết quả: <input type="text" id="result">
+        <button onclick="myFunction()" >Tính</button>
+        </script>
+      </div>
+      <div class="txt col-12-lg col-12-md col-12-sm">
+        Thông báo: <div id="notify"></div>
+      </div>
+    </div>
+  </DIV>
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="pheptinh.js"></script>
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
